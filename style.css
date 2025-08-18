@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(16, 19, 16);
+    color: white;
+}
+
+h4{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p{
+    color: rgb(111, 108, 103);
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.px-46{
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px; 
+}
+
+/* All Btns Varients */
+.primary-btn{
+    background-color: orangered;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    max-width: 200px;
+}
+
+.outline-btn{
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+.ghost-btn{
+    background-color: transparent;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/* ----- Header Section ----- */
+.main-header{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+
+.main-header nav{
+    display: flex;
+    gap: 24px;
+}
+
+.main-header nav a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.main-header nav a:hover{
+    border-bottom: 2px solid orangered;
+}
+
+
+/* Hero Section */
+
+.hero-section{
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.hero-section img{
+   width: 100%;
+}
+
+.hero-section .overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.568);
+    inset: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    text-transform: uppercase;
+    color: white;
+ }
+
+ .hero-section .overlay h2{
+    font-size: 52px;
+    font-weight: 600;
+ }
+
+  .hero-section .overlay > div{
+    display: flex;
+    gap: 16px;
+  }
+
+.grid-cols-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.grid-cols-2 img{
+    width: 100%;
+}
+
+.text-sec{
+    display: grid;
+    gap: 12px;
+    width: 70%;
+}
+
+/* -------- */
+
+.header-content{
+    text-align: center;
+}
+
+.header-content .title{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.grid-cols-3{
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+}
+/* ----------------- */
+
+.feature-card{
+    text-align: center;
+}
+
+.feature-card img{
+    height: 60px;
+}
+
+.feature-card h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.feature-card p{
+   text-align: start;
+}
+
+.schedule-sec{
+    position: relative;
+}
+
+.schedule-sec img{
+    width: 100%;
+}
+
+.schedule-sec .content{
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+}
+
+.schedule-sec .schedule{
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    background-color: rgb(21, 24, 28);
+    padding: 48px 24px;
+    border-radius: 12px;
+}
+
+.app-promotion-sec{
+    position: relative;
+}
+
+.app-promotion-sec > img{
+   width: 100%;
+}
+
+.app-promotion-sec > section{
+   position: absolute;
+   top: 50%;
+   left: 120px;
+   transform: translateY(-50%);
+}
+
+
+#img1{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    width: 220px;
+    object-fit: contain;
+}
+#img2{
+    position: absolute;
+    left: 60%;
+    width: 400px;
+    object-fit: contain;
+}
